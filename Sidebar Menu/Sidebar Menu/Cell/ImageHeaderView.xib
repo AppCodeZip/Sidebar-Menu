@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Image Header View" customClass="ImageHeaderView" customModule="Sidebar_Menu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="crj-Qs-Xeq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ImgLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-S4-hhE">
+                    <rect key="frame" x="8" y="112" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="THq-40-VhC"/>
+                        <constraint firstAttribute="width" constant="80" id="Vdp-yI-A0R"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu7-7I-NWr">
+                    <rect key="frame" x="96" y="142.5" width="214" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0a-VO-UGa">
+                    <rect key="frame" x="96" y="168.5" width="214" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.84999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="izM-QE-qEH">
+                    <rect key="frame" x="96" y="120" width="214" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppCodeZip" translatesAutoresizingMaskIntoConstraints="NO" id="OdD-fw-Dzs">
+                    <rect key="frame" x="9" y="60" width="301" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="j3t-7u-QSJ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pu7-7I-NWr" firstAttribute="leading" secondItem="KsU-S4-hhE" secondAttribute="trailing" constant="8" id="0GP-39-kAi"/>
+                <constraint firstAttribute="bottom" secondItem="crj-Qs-Xeq" secondAttribute="bottom" id="2GQ-0j-7zw"/>
+                <constraint firstAttribute="trailing" secondItem="pu7-7I-NWr" secondAttribute="trailing" constant="10" id="7Nc-nf-1bV"/>
+                <constraint firstItem="izM-QE-qEH" firstAttribute="leading" secondItem="KsU-S4-hhE" secondAttribute="trailing" constant="8" id="7m4-9V-lz8"/>
+                <constraint firstItem="OdD-fw-Dzs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="9B6-MB-RiI"/>
+                <constraint firstItem="r0a-VO-UGa" firstAttribute="leading" secondItem="KsU-S4-hhE" secondAttribute="trailing" constant="8" id="Asn-ue-ezX"/>
+                <constraint firstAttribute="trailing" secondItem="crj-Qs-Xeq" secondAttribute="trailing" id="CEW-Ct-L8O"/>
+                <constraint firstItem="crj-Qs-Xeq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Guc-J3-ibn"/>
+                <constraint firstItem="pu7-7I-NWr" firstAttribute="top" secondItem="izM-QE-qEH" secondAttribute="bottom" constant="2" id="JCs-QP-2ui"/>
+                <constraint firstAttribute="trailing" secondItem="OdD-fw-Dzs" secondAttribute="trailing" constant="10" id="KRm-OY-pLp"/>
+                <constraint firstAttribute="bottom" secondItem="KsU-S4-hhE" secondAttribute="bottom" constant="8" id="Kff-vI-5XQ"/>
+                <constraint firstItem="r0a-VO-UGa" firstAttribute="top" secondItem="pu7-7I-NWr" secondAttribute="bottom" constant="2" id="PRd-5x-9SW"/>
+                <constraint firstItem="crj-Qs-Xeq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S4z-uS-qaB"/>
+                <constraint firstItem="KsU-S4-hhE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="cn0-Hd-iVZ"/>
+                <constraint firstAttribute="trailing" secondItem="r0a-VO-UGa" secondAttribute="trailing" constant="10" id="hWK-Wr-ioM"/>
+                <constraint firstAttribute="trailing" secondItem="izM-QE-qEH" secondAttribute="trailing" constant="10" id="m9W-Tx-zSB"/>
+                <constraint firstItem="OdD-fw-Dzs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="9" id="pFK-P9-SfK"/>
+                <constraint firstItem="izM-QE-qEH" firstAttribute="top" secondItem="OdD-fw-Dzs" secondAttribute="bottom" constant="15" id="z1M-IT-6yF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImage" destination="crj-Qs-Xeq" id="s6z-e0-bbb"/>
+                <outlet property="lblCompany" destination="pu7-7I-NWr" id="Q3S-Th-LKQ"/>
+                <outlet property="lblDepart" destination="r0a-VO-UGa" id="bed-vp-f0v"/>
+                <outlet property="lblUserName" destination="izM-QE-qEH" id="W1z-cF-Yd1"/>
+                <outlet property="profileImage" destination="KsU-S4-hhE" id="C8u-Fp-ZfO"/>
+            </connections>
+            <point key="canvasLocation" x="50" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppCodeZip" width="720" height="90"/>
+        <image name="ImgLogo" width="120" height="120"/>
+        <image name="bg" width="624" height="260"/>
+    </resources>
+</document>

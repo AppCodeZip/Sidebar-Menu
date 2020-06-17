@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Sidebar_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-859.4202898550725" y="85.714285714285708"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="et5-Cf-0fk">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="8d9-ef-LLQ" customClass="MenuViewController" customModule="Sidebar_Menu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lS0-OE-Ddo"/>
+                        <viewControllerLayoutGuide type="bottom" id="CXb-mS-F4E"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.89999997615814209" contentMode="scaleToFill" id="ob7-Ae-Dz7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="MNX-i7-VR6">
+                                <rect key="frame" x="0.0" y="200" width="414" height="662"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8d9-ef-LLQ" id="2WE-gt-QuQ"/>
+                                    <outlet property="delegate" destination="8d9-ef-LLQ" id="4Qw-vh-bKR"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MNX-i7-VR6" firstAttribute="top" secondItem="ob7-Ae-Dz7" secondAttribute="top" constant="200" id="Ead-sf-K3B"/>
+                            <constraint firstItem="MNX-i7-VR6" firstAttribute="leading" secondItem="ob7-Ae-Dz7" secondAttribute="leading" id="Ped-DZ-IkM"/>
+                            <constraint firstAttribute="trailing" secondItem="MNX-i7-VR6" secondAttribute="trailing" id="sIK-j0-FRs"/>
+                            <constraint firstItem="CXb-mS-F4E" firstAttribute="top" secondItem="MNX-i7-VR6" secondAttribute="bottom" id="vuM-7s-f1B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="w5i-RR-XSP"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="MNX-i7-VR6" id="PlA-Nu-udm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkm-b7-5xA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="96"/>
+        </scene>
+    </scenes>
+</document>
